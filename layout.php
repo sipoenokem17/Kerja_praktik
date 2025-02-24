@@ -1,5 +1,6 @@
 <!doctype html>
 <!--
+LAYOUT ADMIN
 * Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
 * @version 1.0.0-beta20
 * @link https://tabler.io
