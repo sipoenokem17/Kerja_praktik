@@ -1,0 +1,17 @@
+//Menambah fitur login //
+>> Langkah-langkah
+1. ganti/copy paste file routes.php di folder app -> config -> routes.php
+2. Ganti/copy paste 3 file controllers (C_admin,C_user,C_Auth) di folder app -> controllers -> disini
+3. ganti/copy paste 3 file models (M_admin, M_user, M_auth) di folder app -> models -> disini
+4. ganti/copy pase file layout untuk admin dan layout untuk user (layout.php dan layout_user.php)
+    > folder untuk admin : app -> views -> admin -> layout.php
+    > folder untuk user  : app -> views -> user -> layout.php
+5. tambahkan file login.php ke folder app -> views -> disini (diluar folder admin, user,dan errors)
+6. tambahkan data pada database di tabel users (untuk admin nama_booth dan pic kosong/null dan user_level untuk admin = 0 dan user = 1)
+
+>> Hasil yang diharapkan
+1. bisa login atau lanjut ke halaman dashboard untuk admin dan halaman transaksi untuk user
+2. bisa memisahkan sesion antara admin dan user
+3. logout dan login kembali.
+
+//END //
