@@ -60,6 +60,17 @@ class C_admin extends BaseController
         return view('admin/data_barang.php', $data);
     }
 
+    public function user(): string
+    {
+        $data = [
+            'title' => 'Daftar User | Admin sesion',
+            'page'  => 'user',
+            'subPage' => '',
+        ];
+
+        return view('admin/user.php', $data);
+    }
+
     public function laporan(): string
     {
         $data = [
