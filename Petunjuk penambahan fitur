@@ -21,7 +21,7 @@
 1. Merubah 3 file
     > routes.php (tambahkan line 18)
     > C_admin.php (Tambahkan line 63-72)
-    > layout.php (Tambahkan line 
+    > layout.php (Tambahkan line 120-129)
 2. Menambahkan file user.php di folder views -> admin -> disini.
 
 >> Hasil yang diharapkan 
