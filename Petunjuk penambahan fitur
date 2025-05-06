@@ -15,3 +15,17 @@
 3. logout dan login kembali.
 
 //END //
+
+//Menambah Halaman Daftar User//
+>> Langkah-langkah
+1. Merubah 3 file
+    > routes.php (tambahkan line 18)
+    > C_admin.php (Tambahkan line 63-72)
+    > layout.php (Tambahkan line 
+2. Menambahkan file user.php di folder views -> admin -> disini.
+
+>> Hasil yang diharapkan 
+1. Navbar bertambah ada "Daftar User"
+2. Daftar user dapat mengarah ke halaman user.php
+
+//END//
