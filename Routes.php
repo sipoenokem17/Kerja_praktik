@@ -15,6 +15,7 @@ $routes->get('auth/logout', 'C_Auth::logout');
     $routes->get('/', 'C_Admin::dashboard');
     $routes->get('transaksi', 'C_Admin::transaksi');
     $routes->get('data_barang', 'C_Admin::data_barang');
+    $routes->get('user', 'C_Admin::user');
     $routes->get('laporan', 'C_Admin::laporan');
 });
 //Sesion Admin End
