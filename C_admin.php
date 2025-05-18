@@ -65,10 +65,68 @@ class C_admin extends BaseController
         $data = [
             'title' => 'Daftar User | Admin sesion',
             'page'  => 'user',
+            'dataUsers'  => $this->admin->dataUser(),
+            'dataBooth'  => $this->admin->dataBooth(),
             'subPage' => '',
         ];
-
+        
         return view('admin/user.php', $data);
+    }
+
+        public function detailUser($id_user)
+    {
+        $detailuser = $this->admin->getdetailUser($id_user);
+        return $this->response->setJSON($detailuser);
+    }
+
+    public function tambahUser()
+    {
+        $data = [
+            'nama'          => $this->request->getPost('nama'),
+            'username'      => $this->request->getPost('username'),
+            'password'      => $this->request->getPost('pasword'),
+            'no_hp'         => $this->request->getPost('noHandphone'),
+            'id_booth'      => $this->request->getPost('id_booth'),
+            'user_level'    => $this->request->getPost('userLevel'),
+        ];
+
+        $this->admin->tambahUser($data);
+
+        session()->setFlashdata('msg_add', 'Data Berhasil Ditambahkan!');
+
+        return redirect()->to('admin/user');
+    }
+
+    public function hapusUser()
+    {
+        $id_user = $this->request->getPost('delid');
+
+        $this->admin->hapusUser($id_user);
+
+
+        session()->setFlashdata('msg_del', 'Data Berhasil Dihapus!');
+
+        return redirect()->to('admin/user');
+    }
+
+    public function ubahDataUser()
+    {
+        $id_user = $this->request->getPost('u_id');
+
+        $data = [
+            'nama'         => $this->request->getPost('u_nama'),
+            'username'     => $this->request->getPost('u_username'),
+            'password'     => $this->request->getPost('u_password'),
+            'No_hp'        => $this->request->getPost('u_noHp'),
+            'id_booth'     => $this->request->getPost('u_id_booth'),
+            'user_level'   => $this->request->getPost('user_Level'),
+        ];
+
+        $this->admin->ubahDataUser($data, $id_user);
+
+        session()->setFlashdata('msg_upd', 'Data Berhasil Diperbaharui!');
+
+        return redirect()->to('admin/user');
     }
 
     public function laporan(): string
