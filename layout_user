@@ -128,16 +128,10 @@ $session = session();
                     </span>
                     <div class="d-none d-xl-block ps-2">
                       <div>
-                        <?php
-                        $nama_booth = session()->get('nama_booth') ?? 'Booth Tidak Ditemukan';
-                        echo !empty($nama_booth) ? $nama_booth : ' ';
-                        ?>
+                        Nama Booth
                       </div>
                       <div class="mt-1 small text-secondary">
-                      <?php
-                        $nama_pic = session()->get('nama_pic') ?? '***';
-                        echo !empty($nama_pic) ? $nama_pic : ' ';
-                        ?>
+                      nama Pic
                       </div>
                     </div>
                   </a>
