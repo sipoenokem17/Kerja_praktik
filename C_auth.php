@@ -62,8 +62,6 @@ class C_auth extends BaseController
                     'user_session' => TRUE,
                     'username'    => $user_check['username'],
                     'user_level'   => $user_check['user_level'],
-                    'nama_booth'   => $user_check['nama_booth'],
-                    'nama_pic'   => $user_check['pic']
                 ];
                 $this->session->set($sessLogin);
                 return redirect()->to('/user');
