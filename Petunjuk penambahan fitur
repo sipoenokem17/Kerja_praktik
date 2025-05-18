@@ -37,15 +37,20 @@
           `id_booth` int NOT NULL,
           `nama_booth` varchar(255) NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-    > Merubah tabel Users dengan menghapus kolom nama_booth dan kolom pic. dan menambah kolom id_booth, nama, No_hp dengan query :
+> Merubah tabel Users dengan menghapus kolom nama_booth dan kolom pic. dan menambah kolom id_booth, nama, No_hp dengan query :
             ALTER TABLE users 
             ADD id_booth int DEFAULT NULL,
             ADD nama varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
             ADD No_hp varchar(15) DEFAULT NULL;
             
             ALTER TABLE users
-            ADD KEY id_booth (`id_booth`);
-            
-            ALTER TABLE `users`
+            ADD KEY id_booth (`id_booth`),
               ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`id_booth`) REFERENCES `booth` (`id_booth`) ON DELETE CASCADE ON UPDATE CASCADE;
-            COMMIT;
+
+> Merubah file routes.php 
+    
+> Merubah File C_admin.php
+> Merubah File M_admin.php
+> Merubah File User.php
+
+
