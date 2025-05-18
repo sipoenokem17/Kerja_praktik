@@ -208,6 +208,10 @@
                                                             <span class="form-check-label">Admin</span>
                                                             <i class="text-danger">*Pilih role admin</i>
                                                         </label>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="radio" name="userLevel" value="1" >
+                                                            <span class="form-check-label">User</span>
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
