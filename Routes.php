@@ -17,6 +17,11 @@ $routes->get('auth/logout', 'C_Auth::logout');
     $routes->get('data_barang', 'C_Admin::data_barang');
     $routes->get('user', 'C_Admin::user');
     $routes->get('laporan', 'C_Admin::laporan');
+    $routes->get('detailUser/(:num)', 'C_Admin::detailUser/$1');
+
+    $routes->post('tambahUser', 'C_admin::tambahUser');
+    $routes->post('hapusUser', 'C_admin::hapusUser');
+    $routes->post('ubahDataUser', 'C_Admin::ubahDataUser');
 });
 //Sesion Admin End
 
