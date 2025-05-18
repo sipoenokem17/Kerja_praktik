@@ -415,11 +415,16 @@
                                                 </div>
                                                 <div class="col-sm-6 col-md-4">
                                                     <div class="mb-3">
-                                                        <label class="form-label"></label>
+                                                        <label class="form-label">Ganti Role</label>
                                                         <label class="form-check">
-                                                            <input class="form-check-input" type="radio" name="user_Level" value="0">
-                                                            <span class="form-check-label text-danger">*Jadikan Admin</span>
+                                                            <input class="form-check-input" type="radio" name="userLevel" value="0">
+                                                            <span class="form-check-label">Admin</span>
                                                         </label>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="radio" name="userLevel" value="1" >
+                                                            <span class="form-check-label">User</span>
+                                                        </label>
+                                                        <i class="text-danger"> *abaikan jika tidak dirubah</i>
                                                     </div>
                                                 </div>
                                             </div>
