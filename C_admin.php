@@ -119,7 +119,7 @@ class C_admin extends BaseController
             'password'     => $this->request->getPost('u_password'),
             'No_hp'        => $this->request->getPost('u_noHp'),
             'id_booth'     => $this->request->getPost('u_id_booth'),
-            'user_level'   => $this->request->getPost('user_Level'),
+            'user_level'   => $this->request->getPost('userLevel'),
         ];
 
         $this->admin->ubahDataUser($data, $id_user);
