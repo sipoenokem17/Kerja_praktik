@@ -37,6 +37,7 @@
           `id_booth` int NOT NULL,
           `nama_booth` varchar(255) NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+> tambahkan data di tabel booth
 
 > Merubah tabel Users dengan menghapus kolom nama_booth dan kolom pic. dan menambah kolom id_booth, nama, No_hp dengan query :
             ALTER TABLE users 
@@ -47,6 +48,7 @@
             ALTER TABLE users
             ADD KEY id_booth (`id_booth`),
               ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`id_booth`) REFERENCES `booth` (`id_booth`) ON DELETE CASCADE ON UPDATE CASCADE;
+edit data user yang udah ada(tambahin data ke kolom yang baru ditambah)
 
 > Merubah file routes.php 
     Copy line 20-24 atau copy semua (CTRL+A) App -> config -> routes.php 
