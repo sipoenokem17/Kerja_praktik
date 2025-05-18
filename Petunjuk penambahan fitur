@@ -37,6 +37,7 @@
           `id_booth` int NOT NULL,
           `nama_booth` varchar(255) NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 > Merubah tabel Users dengan menghapus kolom nama_booth dan kolom pic. dan menambah kolom id_booth, nama, No_hp dengan query :
             ALTER TABLE users 
             ADD id_booth int DEFAULT NULL,
@@ -48,9 +49,13 @@
               ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`id_booth`) REFERENCES `booth` (`id_booth`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 > Merubah file routes.php 
-    
+    Copy line 20-24 atau copy semua (CTRL+A) App -> config -> routes.php 
 > Merubah File C_admin.php
+    Copy line 63-130 atau copy semua (CTRL+A) App -> Controlers -> C_admin.php
 > Merubah File M_admin.php
+    copy semua file M-admin.php di App -> Models -> M_admin.php
 > Merubah File User.php
+    copy semua file user.php di views -> admin-> user.php
 
-
+>> Hasil yang diharapkan 
+    Daftar user muncul, bisa CRUD (Creat, Read, Update, Delete).
